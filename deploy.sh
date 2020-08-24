@@ -6,5 +6,5 @@ then
     docker rm -f flsktest
 fi
 
-docker run -d -p 5555:5555 --name flsktest sw9719/circleciflask:latest
+docker run -d -p 5555:5555 --name flsktest sw9719/circleciflasktest:latest
 
