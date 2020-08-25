@@ -23,10 +23,8 @@ jobs: # A basic unit of work in a run
       - run:
           name: Build and push Docker image
           command: |
-
-            docker build -t sw9719/circleciflask:latest .
-            docker tag sw9719/circleciflask:latest sw9719/circleciflasktest:latest
+            docker build -t sw9719/circleciflasktest:latest .
+            docker tag sw9719/circleciflasktest:latest
             docker login --username=sw9719 --password=Mepro@mw3
-            docker push sw9719/circleciflask:latest
             docker push sw9719/circleciflasktest:latest
             sh deploy.sh
