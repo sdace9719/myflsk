@@ -8,7 +8,7 @@ def hello():
 
 @app.route('/version')
 def version():
-    return "8.1"
+    return "9.1"
 
 
 if __name__ == '__main__':
